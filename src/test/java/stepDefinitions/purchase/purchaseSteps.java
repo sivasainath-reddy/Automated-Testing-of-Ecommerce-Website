@@ -193,8 +193,9 @@ public class purchaseSteps {
 	    driver.findElement(By.xpath("//*[@id=\"form\"]/div/div/div[3]/div/form/input[3]")).sendKeys(OrderSteps.getData("sheet1",1,1));
 	    driver.findElement(By.xpath("//*[@id=\"form\"]/div/div/div[3]/div/form/button")).click();
 	    
-	    WebElement genderRadio = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("id_gender1")));
-	    genderRadio.click();	    
+	    driver.findElement(By.id("id_gender1")).click();
+//	    WebElement genderRadio = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("id_gender1")));
+//	    genderRadio.click();	    
 	    driver.findElement(By.id("password")).sendKeys(OrderSteps.getData("sheet1",1,2));
 
 	    new Select(driver.findElement(By.id("days"))).selectByIndex(5);
