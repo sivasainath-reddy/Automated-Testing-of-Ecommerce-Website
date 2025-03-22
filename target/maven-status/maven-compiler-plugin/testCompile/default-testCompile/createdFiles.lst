@@ -1,0 +1,7 @@
+stepDefinitions\login\LoginSteps.class
+stepDefinitions\functional\FunctionalSteps.class
+stepDefinitions\purchase\purchaseSteps.class
+stepDefinitions\order\OrderSteps.class
+runner\TestRunner.class
+stepDefinitions\order\OrderSteps$1.class
+stepDefinitions\cart\CartSteps.class

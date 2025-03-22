@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runner.TestRunner" time="613.18" tests="26" errors="0" skipped="0" failures="5">
+  <properties>
+    <property name="java.specification.version" value="22"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\wipro_selenium_training\Capstone_Project\Automated_Testing_of_Ecommerce_Website\target\test-classes;D:\wipro_selenium_training\Capstone_Project\Automated_Testing_of_Ecommerce_Website\target\classes;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-java\4.29.0\selenium-java-4.29.0.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-api\4.29.0\selenium-api-4.29.0.jar;C:\Users\sivas\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.29.0\selenium-chrome-driver-4.29.0.jar;C:\Users\sivas\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.29.0\selenium-chromium-driver-4.29.0.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-json\4.29.0\selenium-json-4.29.0.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.29.0\selenium-manager-4.29.0.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v131\4.29.0\selenium-devtools-v131-4.29.0.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v132\4.29.0\selenium-devtools-v132-4.29.0.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v133\4.29.0\selenium-devtools-v133-4.29.0.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.29.0\selenium-devtools-v85-4.29.0.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.29.0\selenium-edge-driver-4.29.0.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.29.0\selenium-firefox-driver-4.29.0.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-http\4.29.0\selenium-http-4.29.0.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.29.0\selenium-ie-driver-4.29.0.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.29.0\selenium-remote-driver-4.29.0.jar;C:\Users\sivas\.m2\repository\com\google\guava\guava\33.4.0-jre\guava-33.4.0-jre.jar;C:\Users\sivas\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\sivas\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\sivas\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\sivas\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\sivas\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\sivas\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\sivas\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\sivas\.m2\repository\io\opentelemetry\opentelemetry-api\1.46.0\opentelemetry-api-1.46.0.jar;C:\Users\sivas\.m2\repository\io\opentelemetry\opentelemetry-context\1.46.0\opentelemetry-context-1.46.0.jar;C:\Users\sivas\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.46.0\opentelemetry-exporter-logging-1.46.0.jar;C:\Users\sivas\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.46.0\opentelemetry-sdk-common-1.46.0.jar;C:\Users\sivas\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.46.0\opentelemetry-sdk-extension-autoconfigure-spi-1.46.0.jar;C:\Users\sivas\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.46.0\opentelemetry-sdk-extension-autoconfigure-1.46.0.jar;C:\Users\sivas\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.46.0-alpha\opentelemetry-api-incubator-1.46.0-alpha.jar;C:\Users\sivas\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.46.0\opentelemetry-sdk-trace-1.46.0.jar;C:\Users\sivas\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.46.0\opentelemetry-sdk-1.46.0.jar;C:\Users\sivas\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.46.0\opentelemetry-sdk-metrics-1.46.0.jar;C:\Users\sivas\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.46.0\opentelemetry-sdk-logs-1.46.0.jar;C:\Users\sivas\.m2\repository\net\bytebuddy\byte-buddy\1.15.11\byte-buddy-1.15.11.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-os\4.29.0\selenium-os-4.29.0.jar;C:\Users\sivas\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.29.0\selenium-safari-driver-4.29.0.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-support\4.29.0\selenium-support-4.29.0.jar;C:\Users\sivas\.m2\repository\io\cucumber\cucumber-java\7.21.1\cucumber-java-7.21.1.jar;C:\Users\sivas\.m2\repository\io\cucumber\cucumber-core\7.21.1\cucumber-core-7.21.1.jar;C:\Users\sivas\.m2\repository\io\cucumber\cucumber-gherkin\7.21.1\cucumber-gherkin-7.21.1.jar;C:\Users\sivas\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.21.1\cucumber-gherkin-messages-7.21.1.jar;C:\Users\sivas\.m2\repository\io\cucumber\gherkin\31.0.0\gherkin-31.0.0.jar;C:\Users\sivas\.m2\repository\io\cucumber\messages\27.2.0\messages-27.2.0.jar;C:\Users\sivas\.m2\repository\io\cucumber\testng-xml-formatter\0.3.1\testng-xml-formatter-0.3.1.jar;C:\Users\sivas\.m2\repository\io\cucumber\query\13.2.0\query-13.2.0.jar;C:\Users\sivas\.m2\repository\io\cucumber\tag-expressions\6.1.2\tag-expressions-6.1.2.jar;C:\Users\sivas\.m2\repository\io\cucumber\cucumber-expressions\18.0.1\cucumber-expressions-18.0.1.jar;C:\Users\sivas\.m2\repository\io\cucumber\datatable\7.21.1\datatable-7.21.1.jar;C:\Users\sivas\.m2\repository\io\cucumber\cucumber-plugin\7.21.1\cucumber-plugin-7.21.1.jar;C:\Users\sivas\.m2\repository\io\cucumber\docstring\7.21.1\docstring-7.21.1.jar;C:\Users\sivas\.m2\repository\io\cucumber\html-formatter\21.9.0\html-formatter-21.9.0.jar;C:\Users\sivas\.m2\repository\io\cucumber\junit-xml-formatter\0.7.1\junit-xml-formatter-0.7.1.jar;C:\Users\sivas\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\sivas\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\sivas\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\sivas\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\sivas\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\sivas\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\sivas\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\sivas\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\sivas\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\sivas\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\sivas\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\sivas\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\sivas\.m2\repository\org\apache\logging\log4j\log4j-api\2.18.0\log4j-api-2.18.0.jar;C:\Users\sivas\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\sivas\.m2\repository\io\cucumber\cucumber-testng\7.21.1\cucumber-testng-7.21.1.jar;C:\Users\sivas\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\sivas\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\sivas\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\sivas\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\sivas\.m2\repository\io\qameta\allure\allure-testng\2.23.0\allure-testng-2.23.0.jar;C:\Users\sivas\.m2\repository\io\qameta\allure\allure-java-commons\2.23.0\allure-java-commons-2.23.0.jar;C:\Users\sivas\.m2\repository\io\qameta\allure\allure-model\2.23.0\allure-model-2.23.0.jar;C:\Users\sivas\.m2\repository\io\qameta\allure\allure-test-filter\2.23.0\allure-test-filter-2.23.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="22"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-22\bin"/>
+    <property name="sun.java.command" value="C:\Users\sivas\AppData\Local\Temp\surefire3593783056022865653\surefirebooter-20250321171508980_3.jar C:\Users\sivas\AppData\Local\Temp\surefire3593783056022865653 2025-03-21T17-15-08_763-jvmRun1 surefire-20250321171508980_1tmp surefire_0-20250321171508980_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\wipro_selenium_training\Capstone_Project\Automated_Testing_of_Ecommerce_Website\target\test-classes;D:\wipro_selenium_training\Capstone_Project\Automated_Testing_of_Ecommerce_Website\target\classes;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-java\4.29.0\selenium-java-4.29.0.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-api\4.29.0\selenium-api-4.29.0.jar;C:\Users\sivas\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.29.0\selenium-chrome-driver-4.29.0.jar;C:\Users\sivas\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.29.0\selenium-chromium-driver-4.29.0.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-json\4.29.0\selenium-json-4.29.0.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.29.0\selenium-manager-4.29.0.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v131\4.29.0\selenium-devtools-v131-4.29.0.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v132\4.29.0\selenium-devtools-v132-4.29.0.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v133\4.29.0\selenium-devtools-v133-4.29.0.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.29.0\selenium-devtools-v85-4.29.0.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.29.0\selenium-edge-driver-4.29.0.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.29.0\selenium-firefox-driver-4.29.0.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-http\4.29.0\selenium-http-4.29.0.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.29.0\selenium-ie-driver-4.29.0.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.29.0\selenium-remote-driver-4.29.0.jar;C:\Users\sivas\.m2\repository\com\google\guava\guava\33.4.0-jre\guava-33.4.0-jre.jar;C:\Users\sivas\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\sivas\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\sivas\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\sivas\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\sivas\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\sivas\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\sivas\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\sivas\.m2\repository\io\opentelemetry\opentelemetry-api\1.46.0\opentelemetry-api-1.46.0.jar;C:\Users\sivas\.m2\repository\io\opentelemetry\opentelemetry-context\1.46.0\opentelemetry-context-1.46.0.jar;C:\Users\sivas\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.46.0\opentelemetry-exporter-logging-1.46.0.jar;C:\Users\sivas\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.46.0\opentelemetry-sdk-common-1.46.0.jar;C:\Users\sivas\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.46.0\opentelemetry-sdk-extension-autoconfigure-spi-1.46.0.jar;C:\Users\sivas\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.46.0\opentelemetry-sdk-extension-autoconfigure-1.46.0.jar;C:\Users\sivas\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.46.0-alpha\opentelemetry-api-incubator-1.46.0-alpha.jar;C:\Users\sivas\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.46.0\opentelemetry-sdk-trace-1.46.0.jar;C:\Users\sivas\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.46.0\opentelemetry-sdk-1.46.0.jar;C:\Users\sivas\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.46.0\opentelemetry-sdk-metrics-1.46.0.jar;C:\Users\sivas\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.46.0\opentelemetry-sdk-logs-1.46.0.jar;C:\Users\sivas\.m2\repository\net\bytebuddy\byte-buddy\1.15.11\byte-buddy-1.15.11.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-os\4.29.0\selenium-os-4.29.0.jar;C:\Users\sivas\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.29.0\selenium-safari-driver-4.29.0.jar;C:\Users\sivas\.m2\repository\org\seleniumhq\selenium\selenium-support\4.29.0\selenium-support-4.29.0.jar;C:\Users\sivas\.m2\repository\io\cucumber\cucumber-java\7.21.1\cucumber-java-7.21.1.jar;C:\Users\sivas\.m2\repository\io\cucumber\cucumber-core\7.21.1\cucumber-core-7.21.1.jar;C:\Users\sivas\.m2\repository\io\cucumber\cucumber-gherkin\7.21.1\cucumber-gherkin-7.21.1.jar;C:\Users\sivas\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.21.1\cucumber-gherkin-messages-7.21.1.jar;C:\Users\sivas\.m2\repository\io\cucumber\gherkin\31.0.0\gherkin-31.0.0.jar;C:\Users\sivas\.m2\repository\io\cucumber\messages\27.2.0\messages-27.2.0.jar;C:\Users\sivas\.m2\repository\io\cucumber\testng-xml-formatter\0.3.1\testng-xml-formatter-0.3.1.jar;C:\Users\sivas\.m2\repository\io\cucumber\query\13.2.0\query-13.2.0.jar;C:\Users\sivas\.m2\repository\io\cucumber\tag-expressions\6.1.2\tag-expressions-6.1.2.jar;C:\Users\sivas\.m2\repository\io\cucumber\cucumber-expressions\18.0.1\cucumber-expressions-18.0.1.jar;C:\Users\sivas\.m2\repository\io\cucumber\datatable\7.21.1\datatable-7.21.1.jar;C:\Users\sivas\.m2\repository\io\cucumber\cucumber-plugin\7.21.1\cucumber-plugin-7.21.1.jar;C:\Users\sivas\.m2\repository\io\cucumber\docstring\7.21.1\docstring-7.21.1.jar;C:\Users\sivas\.m2\repository\io\cucumber\html-formatter\21.9.0\html-formatter-21.9.0.jar;C:\Users\sivas\.m2\repository\io\cucumber\junit-xml-formatter\0.7.1\junit-xml-formatter-0.7.1.jar;C:\Users\sivas\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\sivas\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\sivas\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\sivas\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\sivas\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\sivas\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\sivas\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\sivas\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\sivas\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\sivas\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\sivas\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\sivas\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\sivas\.m2\repository\org\apache\logging\log4j\log4j-api\2.18.0\log4j-api-2.18.0.jar;C:\Users\sivas\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\sivas\.m2\repository\io\cucumber\cucumber-testng\7.21.1\cucumber-testng-7.21.1.jar;C:\Users\sivas\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\sivas\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\sivas\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\sivas\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\sivas\.m2\repository\io\qameta\allure\allure-testng\2.23.0\allure-testng-2.23.0.jar;C:\Users\sivas\.m2\repository\io\qameta\allure\allure-java-commons\2.23.0\allure-java-commons-2.23.0.jar;C:\Users\sivas\.m2\repository\io\qameta\allure\allure-model\2.23.0\allure-model-2.23.0.jar;C:\Users\sivas\.m2\repository\io\qameta\allure\allure-test-filter\2.23.0\allure-test-filter-2.23.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\sivas"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-22"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\wipro_selenium_training\Capstone_Project\Automated_Testing_of_Ecommerce_Website"/>
+    <property name="style.color" value="always"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\sivas\AppData\Local\Temp\surefire3593783056022865653\surefirebooter-20250321171508980_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="22.0.2+9-70"/>
+    <property name="user.name" value="sivas"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\sivas\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\sivas\AppData\Local\Temp\"/>
+    <property name="java.version" value="22.0.2"/>
+    <property name="user.dir" value="D:\wipro_selenium_training\Capstone_Project\Automated_Testing_of_Ecommerce_Website"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk-22/bin/server;C:/Program Files/Java/jdk-22/bin;C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;C:\Program Files\nodejs\;C:\Program Files\apache-maven-3.9.9\bin;C:\Users\sivas\AppData\Local\Programs\Python\Launcher\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\sivas\AppData\Local\Microsoft\WindowsApps;C:\Users\sivas\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\sivas\AppData\Roaming\npm;C:\Program Files\apache-maven-3.9.9\bin;;C:\WINDOWS\System32;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="22.0.2+9-70"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="66.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;Search Products and Verify Cart After Login&quot;, &quot;E-commerce Website Automation Testing&quot;](1)" classname="runner.TestRunner" time="81.261">
+    <system-out><![CDATA[
+Scenario: Search Products and Verify Cart After Login             # src/test/resources/features/cart/cart.feature:6
+  Given I navigate to "http://automationexercise.com" website     # stepDefinitions.cart.CartSteps.i_navigate_to_website(java.lang.String)
+  When click products                                             # stepDefinitions.cart.CartSteps.click_products()
+  Then veify the navigated page                                   # stepDefinitions.cart.CartSteps.veify_the_navigated_page()
+  When search for product and click search                        # stepDefinitions.cart.CartSteps.search_for_product_and_click_search()
+SEARCHED PRODUCTS
+  Then verify the page searched products                          # stepDefinitions.cart.CartSteps.verify_the_page_searched_products()
+  And verify all relate products are visible                      # stepDefinitions.cart.CartSteps.verify_all_relate_products_are_visible()
+  And add those products to cart                                  # stepDefinitions.cart.CartSteps.add_those_products_to_cart()
+  And click cart and verify products are visible                  # stepDefinitions.cart.CartSteps.click_cart_and_verify_products_are_visible()
+  When click login and enter login credentials                    # stepDefinitions.cart.CartSteps.click_login_and_enter_login_credentials()
+  Then go to cart                                                 # stepDefinitions.cart.CartSteps.go_to_cart()
+  And verify all products added to cart are visible               # stepDefinitions.cart.CartSteps.verify_all_products_added_to_cart_are_visible()
+  And remove all products from cart                               # stepDefinitions.cart.CartSteps.remove_all_products_from_cart()
+Actual Message: Cart is empty! Click here to buy products.
+  And verify message "Cart is empty! Click here to buy products." # stepDefinitions.cart.CartSteps.verify_message(java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Mar 21, 2025 5:15:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+Mar 21, 2025 5:15:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+Mar 21, 2025 5:15:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+Mar 21, 2025 5:15:17 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+Mar 21, 2025 5:15:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Add review on product&quot;, &quot;E-commerce Website Automation Testing&quot;](2)" classname="runner.TestRunner" time="18.46">
+    <system-out><![CDATA[
+Scenario: Add review on product                               # src/test/resources/features/cart/cart.feature:20
+  Given I navigate to "http://automationexercise.com" website # stepDefinitions.cart.CartSteps.i_navigate_to_website(java.lang.String)
+  When i click products button                                # stepDefinitions.cart.CartSteps.i_click_products_button()
+  Then veify the navigated to all products page               # stepDefinitions.cart.CartSteps.veify_the_navigated_to_all_products_page()
+  And click on view products                                  # stepDefinitions.cart.CartSteps.click_on_view_products()
+  When verify "Write Your Review" is visible                  # stepDefinitions.cart.CartSteps.verify_is_visible(java.lang.String)
+  Then enter name email and review                            # stepDefinitions.cart.CartSteps.enter_name_email_and_review()
+  And click submit                                            # stepDefinitions.cart.CartSteps.click_submit()
+  And verify "Thank you for your review."                     # stepDefinitions.cart.CartSteps.verify(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Add to cart from Recommended items&quot;, &quot;E-commerce Website Automation Testing&quot;](3)" classname="runner.TestRunner" time="9.541">
+    <system-out><![CDATA[
+Scenario: Add to cart from Recommended items                  # src/test/resources/features/cart/cart.feature:29
+  Given I navigate to "http://automationexercise.com" website # stepDefinitions.cart.CartSteps.i_navigate_to_website(java.lang.String)
+  When scroll to bottom                                       # stepDefinitions.cart.CartSteps.scroll_to_bottom()
+  Then verify "recommended items" on bottom of page           # stepDefinitions.cart.CartSteps.verify_on_bottom_of_page(java.lang.String)
+  And add to cart recommended items                           # stepDefinitions.cart.CartSteps.add_to_cart_recommended_items()
+  And click on view cart button                               # stepDefinitions.cart.CartSteps.click_on_view_cart_button()
+  And verify product displayed in cart                        # stepDefinitions.cart.CartSteps.verify_product_displayed_in_cart()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Contact Us&quot;, &quot;E-commerce Website Automation Testing&quot;](4)" classname="runner.TestRunner" time="40.271">
+    <system-out><![CDATA[
+Scenario: Contact Us                                                               # src/test/resources/features/functionalities/functionalities.feature:7
+  Given user navigate to "http://automationexercise.com"                           # stepDefinitions.functional.FunctionalSteps.user_navigate_to(java.lang.String)
+Automation Exercise
+  Then verify that the home page is visible successfully                           # stepDefinitions.functional.FunctionalSteps.verify_that_the_home_page_is_visible_successfully()
+  When i click contact us                                                          # stepDefinitions.functional.FunctionalSteps.i_click_contact_us()
+  Then verify 'Get In Touch' is displayed                                          # stepDefinitions.functional.FunctionalSteps.verify_is_displayed(java.lang.String)
+  And enter name email subject and msg                                             # stepDefinitions.functional.FunctionalSteps.enter_name_email_subject_and_msg()
+  And upload file                                                                  # stepDefinitions.functional.FunctionalSteps.upload_file()
+  And user click submit                                                            # stepDefinitions.functional.FunctionalSteps.user_click_submit()
+  And click ok                                                                     # stepDefinitions.functional.FunctionalSteps.click_ok()
+  And verify success msg 'Success! Your details have been submitted successfully.' # stepDefinitions.functional.FunctionalSteps.verify_success_msg(java.lang.String)
+Automation Exercise
+  And click home button and verify it is in homepage                               # stepDefinitions.functional.FunctionalSteps.click_home_button_and_verify_it_is_in_homepage()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify Test Cases Page&quot;, &quot;E-commerce Website Automation Testing&quot;](5)" classname="runner.TestRunner" time="15.651">
+    <system-out><![CDATA[
+Scenario: Verify Test Cases Page                         # src/test/resources/features/functionalities/functionalities.feature:17
+  Given user navigate to "http://automationexercise.com" # stepDefinitions.functional.FunctionalSteps.user_navigate_to(java.lang.String)
+Automation Exercise
+  Then verify that the home page is visible successfully # stepDefinitions.functional.FunctionalSteps.verify_that_the_home_page_is_visible_successfully()
+  When click test cases                                  # stepDefinitions.functional.FunctionalSteps.click_test_cases()
+Automation Practice Website for UI Testing - Test Cases
+  Then verify in test cases page                         # stepDefinitions.functional.FunctionalSteps.verify_in_test_cases_page()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify All Products and product detail page&quot;, &quot;E-commerce Website Automation Testing&quot;](6)" classname="runner.TestRunner" time="21.727">
+    <system-out><![CDATA[
+Scenario: Verify All Products and product detail page    # src/test/resources/features/functionalities/functionalities.feature:21
+  Given user navigate to "http://automationexercise.com" # stepDefinitions.functional.FunctionalSteps.user_navigate_to(java.lang.String)
+Automation Exercise
+  Then verify that the home page is visible successfully # stepDefinitions.functional.FunctionalSteps.verify_that_the_home_page_is_visible_successfully()
+  When user click products                               # stepDefinitions.functional.FunctionalSteps.user_click_products()
+Automation Exercise - All Products
+  Then verify products page                              # stepDefinitions.functional.FunctionalSteps.verify_products_page()
+ALL PRODUCTS
+  And product list visible                               # stepDefinitions.functional.FunctionalSteps.product_list_visible()
+  And click view products                                # stepDefinitions.functional.FunctionalSteps.click_view_products()
+  And user in product detail page                        # stepDefinitions.functional.FunctionalSteps.user_in_product_detail_page()
+  And verify deatls page                                 # stepDefinitions.functional.FunctionalSteps.verify_deatls_page()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Search Product&quot;, &quot;E-commerce Website Automation Testing&quot;](7)" classname="runner.TestRunner" time="17.175">
+    <system-out><![CDATA[
+Scenario: Search Product                                 # src/test/resources/features/functionalities/functionalities.feature:29
+  Given user navigate to "http://automationexercise.com" # stepDefinitions.functional.FunctionalSteps.user_navigate_to(java.lang.String)
+Automation Exercise
+  Then verify that the home page is visible successfully # stepDefinitions.functional.FunctionalSteps.verify_that_the_home_page_is_visible_successfully()
+  When click on products                                 # stepDefinitions.functional.FunctionalSteps.click_on_products()
+  Then verify all products page                          # stepDefinitions.functional.FunctionalSteps.verify_all_products_page()
+  And search product name                                # stepDefinitions.functional.FunctionalSteps.search_product_name()
+SEARCHED PRODUCTS
+  And verify searched products page                      # stepDefinitions.functional.FunctionalSteps.verify_searched_products_page()
+  And verify all related products                        # stepDefinitions.functional.FunctionalSteps.verify_all_related_products()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify Subscription in home page&quot;, &quot;E-commerce Website Automation Testing&quot;](8)" classname="runner.TestRunner" time="7.416">
+    <system-out><![CDATA[
+Scenario: Verify Subscription in home page               # src/test/resources/features/functionalities/functionalities.feature:36
+  Given user navigate to "http://automationexercise.com" # stepDefinitions.functional.FunctionalSteps.user_navigate_to(java.lang.String)
+Automation Exercise
+  Then verify that the home page is visible successfully # stepDefinitions.functional.FunctionalSteps.verify_that_the_home_page_is_visible_successfully()
+  When scroll down to footer                             # stepDefinitions.functional.FunctionalSteps.scroll_down_to_footer()
+SUBSCRIPTION
+  Then verify subscription                               # stepDefinitions.functional.FunctionalSteps.verify_subscription()
+  And enter email and click arrow                        # stepDefinitions.functional.FunctionalSteps.enter_email_and_click_arrow()
+  And verify msg visible                                 # stepDefinitions.functional.FunctionalSteps.verify_msg_visible()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify Subscription in Cart page&quot;, &quot;E-commerce Website Automation Testing&quot;](9)" classname="runner.TestRunner" time="7.032">
+    <system-out><![CDATA[
+Scenario: Verify Subscription in Cart page               # src/test/resources/features/functionalities/functionalities.feature:42
+  Given user navigate to "http://automationexercise.com" # stepDefinitions.functional.FunctionalSteps.user_navigate_to(java.lang.String)
+Automation Exercise
+  Then verify that the home page is visible successfully # stepDefinitions.functional.FunctionalSteps.verify_that_the_home_page_is_visible_successfully()
+  When click cart and scroll to footer                   # stepDefinitions.functional.FunctionalSteps.click_cart_and_scroll_to_footer()
+SUBSCRIPTION
+  Then Verify subscription text                          # stepDefinitions.functional.FunctionalSteps.verify_subscription_text()
+  And enter email and click arrow button                 # stepDefinitions.functional.FunctionalSteps.enter_email_and_click_arrow_button()
+  And verify message visible                             # stepDefinitions.functional.FunctionalSteps.verify_message_visible()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Add Products in Cart&quot;, &quot;E-commerce Website Automation Testing&quot;](10)" classname="runner.TestRunner" time="12.319">
+    <system-out><![CDATA[
+Scenario: Add Products in Cart                           # src/test/resources/features/functionalities/functionalities.feature:48
+  Given user navigate to "http://automationexercise.com" # stepDefinitions.functional.FunctionalSteps.user_navigate_to(java.lang.String)
+Automation Exercise
+  Then verify that the home page is visible successfully # stepDefinitions.functional.FunctionalSteps.verify_that_the_home_page_is_visible_successfully()
+  When user click products button                        # stepDefinitions.functional.FunctionalSteps.user_click_products_button()
+  Then hover to first product and add to cart            # stepDefinitions.functional.FunctionalSteps.hover_to_first_product_and_add_to_cart()
+  And click continue shopping                            # stepDefinitions.functional.FunctionalSteps.click_continue_shopping()
+  And hover to second product and add to cart            # stepDefinitions.functional.FunctionalSteps.hover_to_second_product_and_add_to_cart()
+  And user click view cart                               # stepDefinitions.functional.FunctionalSteps.user_click_view_cart()
+  And verify both products in cart                       # stepDefinitions.functional.FunctionalSteps.verify_both_products_in_cart()
+  And verify price,quality and total price               # stepDefinitions.functional.FunctionalSteps.verify_price_quality_and_total_price()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify Product quantity in Cart&quot;, &quot;E-commerce Website Automation Testing&quot;](11)" classname="runner.TestRunner" time="11.455">
+    <system-out><![CDATA[
+Scenario: Verify Product quantity in Cart                # src/test/resources/features/functionalities/functionalities.feature:57
+  Given user navigate to "http://automationexercise.com" # stepDefinitions.functional.FunctionalSteps.user_navigate_to(java.lang.String)
+Automation Exercise
+  Then verify that the home page is visible successfully # stepDefinitions.functional.FunctionalSteps.verify_that_the_home_page_is_visible_successfully()
+  When click view product                                # stepDefinitions.functional.FunctionalSteps.click_view_product()
+  Then verify the opened details                         # stepDefinitions.functional.FunctionalSteps.verify_the_opened_details()
+  And increase quantity to four                          # stepDefinitions.functional.FunctionalSteps.increase_quantity_to_four()
+  When click add cart                                    # stepDefinitions.functional.FunctionalSteps.click_add_cart()
+  And click view cart popup                              # stepDefinitions.functional.FunctionalSteps.click_view_cart_popup()
+  Then verify product quantity                           # stepDefinitions.functional.FunctionalSteps.verify_product_quantity()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Register a new user&quot;, &quot;E-commerce Website Automation Testing&quot;](12)" classname="runner.TestRunner" time="44.999">
+    <system-out><![CDATA[
+Scenario: Register a new user                               # src/test/resources/features/login/login.feature:9
+  Given I navigate to page "http://automationexercise.com"  # stepDefinitions.login.LoginSteps.i_navigate_to_page(java.lang.String)
+Automation Exercise
+  Then I verify that the home page is visible successfully  # stepDefinitions.login.LoginSteps.i_verify_that_the_home_page_is_visible_successfully()
+  When I click on Signup Login button                       # stepDefinitions.login.LoginSteps.i_click_on_signup_login_button()
+SignUp page is visible successfully.
+  Then I verify "New User Signup!" is visible               # stepDefinitions.login.LoginSteps.i_verify_is_visible(java.lang.String)
+  Then I enter name and email address                       # stepDefinitions.login.LoginSteps.i_enter_name_and_email_address()
+  When I click Signup button to signup                      # stepDefinitions.login.LoginSteps.i_click_signup_button_to_signup()
+Enter Account Information Page is visible successfully.
+  Then I verify that 'ENTER ACCOUNT INFORMATION' is visible # stepDefinitions.login.LoginSteps.i_verify_that_is_visible(java.lang.String)
+  And I fill in the account details                         # stepDefinitions.login.LoginSteps.i_fill_in_the_account_details()
+  And I click Create Account button                         # stepDefinitions.login.LoginSteps.i_click_create_account_button()
+Unable to conform the account creation.
+  Then I check that 'Account Created!' is visible           # stepDefinitions.login.LoginSteps.i_check_that_is_visible(java.lang.String)
+  When I click Continue                                     # stepDefinitions.login.LoginSteps.i_click_continue()
+Actual Message: siva
+  Then the user should see the username 'siva'              # stepDefinitions.login.LoginSteps.the_user_should_see_the_username(java.lang.String)
+  When I click Delete Account button                        # stepDefinitions.login.LoginSteps.i_click_delete_account_button()
+Unable to conform the account deletion.
+  Then I verify that 'Account Deleted!' is available        # stepDefinitions.login.LoginSteps.i_verify_that_is_available(java.lang.String)
+  And I click Continue button                               # stepDefinitions.login.LoginSteps.i_click_continue_button()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify with valid credentials&quot;, &quot;E-commerce Website Automation Testing&quot;](13)" classname="runner.TestRunner" time="15.213">
+    <system-out><![CDATA[
+Scenario: Verify with valid credentials                    # src/test/resources/features/login/login.feature:23
+  Given I navigate to page "http://automationexercise.com" # stepDefinitions.login.LoginSteps.i_navigate_to_page(java.lang.String)
+Automation Exercise
+  Then I verify that the home page is visible successfully # stepDefinitions.login.LoginSteps.i_verify_that_the_home_page_is_visible_successfully()
+  When I click on Signup Login button                      # stepDefinitions.login.LoginSteps.i_click_on_signup_login_button()
+SignUp page is visible successfully.
+  Then I verify "New User Signup!" is visible              # stepDefinitions.login.LoginSteps.i_verify_is_visible(java.lang.String)
+  When I enter valid email address and password            # stepDefinitions.login.LoginSteps.i_enter_valid_email_address_and_password()
+  Then click login                                         # stepDefinitions.login.LoginSteps.click_login()
+Actual Message: siva
+  And verify to see message username 'siva'                # stepDefinitions.login.LoginSteps.verify_to_see_message_username(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify with invalid credentials&quot;, &quot;E-commerce Website Automation Testing&quot;](14)" classname="runner.TestRunner" time="8.597">
+    <system-out><![CDATA[
+Scenario: Verify with invalid credentials                  # src/test/resources/features/login/login.feature:28
+  Given I navigate to page "http://automationexercise.com" # stepDefinitions.login.LoginSteps.i_navigate_to_page(java.lang.String)
+Automation Exercise
+  Then I verify that the home page is visible successfully # stepDefinitions.login.LoginSteps.i_verify_that_the_home_page_is_visible_successfully()
+  When I click on Signup Login button                      # stepDefinitions.login.LoginSteps.i_click_on_signup_login_button()
+SignUp page is visible successfully.
+  Then I verify "New User Signup!" is visible              # stepDefinitions.login.LoginSteps.i_verify_is_visible(java.lang.String)
+  When I enter invalid email address and password          # stepDefinitions.login.LoginSteps.i_enter_invalid_email_address_and_password()
+  Then click login button                                  # stepDefinitions.login.LoginSteps.click_login_button()
+Actual error: Your email or password is incorrect!
+  And verify error                                         # stepDefinitions.login.LoginSteps.verify_error()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Logout User&quot;, &quot;E-commerce Website Automation Testing&quot;](15)" classname="runner.TestRunner" time="13.724">
+    <system-out><![CDATA[
+Scenario: Logout User                                      # src/test/resources/features/login/login.feature:33
+  Given I navigate to page "http://automationexercise.com" # stepDefinitions.login.LoginSteps.i_navigate_to_page(java.lang.String)
+Automation Exercise
+  Then I verify that the home page is visible successfully # stepDefinitions.login.LoginSteps.i_verify_that_the_home_page_is_visible_successfully()
+  When I click on Signup Login button                      # stepDefinitions.login.LoginSteps.i_click_on_signup_login_button()
+SignUp page is visible successfully.
+  Then I verify "New User Signup!" is visible              # stepDefinitions.login.LoginSteps.i_verify_is_visible(java.lang.String)
+  When enter email and password                            # stepDefinitions.login.LoginSteps.enter_email_and_password()
+  Then i click login button                                # stepDefinitions.login.LoginSteps.i_click_login_button()
+Actual Message: siva
+  And verify message username 'siva'                       # stepDefinitions.login.LoginSteps.verify_message_username(java.lang.String)
+  When click logout                                        # stepDefinitions.login.LoginSteps.click_logout()
+  Then verify user is in login page                        # stepDefinitions.login.LoginSteps.verify_user_is_in_login_page()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Register User with existing email&quot;, &quot;E-commerce Website Automation Testing&quot;](16)" classname="runner.TestRunner" time="18.535">
+    <system-out><![CDATA[
+Scenario: Register User with existing email                # src/test/resources/features/login/login.feature:40
+  Given I navigate to page "http://automationexercise.com" # stepDefinitions.login.LoginSteps.i_navigate_to_page(java.lang.String)
+Automation Exercise
+  Then I verify that the home page is visible successfully # stepDefinitions.login.LoginSteps.i_verify_that_the_home_page_is_visible_successfully()
+  When I click on Signup Login button                      # stepDefinitions.login.LoginSteps.i_click_on_signup_login_button()
+SignUp page is visible successfully.
+  Then I verify "New User Signup!" is visible              # stepDefinitions.login.LoginSteps.i_verify_is_visible(java.lang.String)
+  When i register                                          # stepDefinitions.login.LoginSteps.i_register()
+  Then click signup                                        # stepDefinitions.login.LoginSteps.click_signup()
+Email Address already exist!
+  And verify error message                                 # stepDefinitions.login.LoginSteps.verify_error_message()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Place Order: Register while Checkout&quot;, &quot;E-commerce Website Automation Testing&quot;](17)" classname="runner.TestRunner" time="41.272">
+    <failure message="element click intercepted: Element &lt;button class=&quot;form-control btn btn-primary submit-button&quot; data-qa=&quot;pay-button&quot; id=&quot;submit&quot; type=&quot;submit&quot;&gt;...&lt;/button&gt; is not clickable at point (759, 565). Other element would receive the click: &lt;iframe id=&quot;aswift_1&quot; name=&quot;aswift_1&quot; browsingtopics=&quot;true&quot; style=&quot;width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;&quot; sandbox=&quot;allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot; width=&quot;1005&quot; height=&quot;124&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; vspace=&quot;0&quot; hspace=&quot;0&quot; allowtransparency=&quot;true&quot; scrolling=&quot;no&quot; allow=&quot;attribution-reporting; run-ad-auction&quot; src=&quot;https://googleads.g.doubleclick.net/pagead/html/r20250319/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=2&amp;amp;uci=a!2&amp;amp;btvi=1&quot; data-google-container-id=&quot;a!2&quot; tabindex=&quot;0&quot; title=&quot;Advertisement&quot; aria-label=&quot;Advertisement&quot; data-google-query-id=&quot;CIW7zoSOm4wDFUt0nQkdeMw1uA&quot; data-load-complete=&quot;true&quot;&gt;&lt;/iframe&gt;&#10;  (Session info: chrome=134.0.6998.118)&#10;Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [c2ce3748521fc386092e97ee3caf3cfa, clickElement {id=f.FC30D81C93FFD776DF91091B923B2517.d.792A356DFCB4FEA7E1CF38F6CD940B38.e.555}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\sivas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58487}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58487/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on windows (c2ce3748521fc386092e97ee3caf3cfa)] -&gt; id: submit]&#10;Session ID: c2ce3748521fc386092e97ee3caf3cfa" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button class="form-control btn btn-primary submit-button" data-qa="pay-button" id="submit" type="submit">...</button> is not clickable at point (759, 565). Other element would receive the click: <iframe id="aswift_1" name="aswift_1" browsingtopics="true" style="width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1005" height="124" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20250319/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;adk=1812271801&amp;client=ca-pub-1677597403311019&amp;fa=1&amp;ifi=2&amp;uci=a!2&amp;btvi=1" data-google-container-id="a!2" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CIW7zoSOm4wDFUt0nQkdeMw1uA" data-load-complete="true"></iframe>
+  (Session info: chrome=134.0.6998.118)
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c2ce3748521fc386092e97ee3caf3cfa, clickElement {id=f.FC30D81C93FFD776DF91091B923B2517.d.792A356DFCB4FEA7E1CF38F6CD940B38.e.555}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\sivas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58487}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58487/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c2ce3748521fc386092e97ee3caf3cfa)] -> id: submit]
+Session ID: c2ce3748521fc386092e97ee3caf3cfa
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at stepDefinitions.order.OrderSteps.click_pay_and_confirm_order_to_proceed(OrderSteps.java:205)
+	at ✽.click pay and confirm order to proceed(file:///D:/wipro_selenium_training/Capstone_Project/Automated_Testing_of_Ecommerce_Website/src/test/resources/features/order/order.feature:21)
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Place Order: Register while Checkout                                     # src/test/resources/features/order/order.feature:7
+  Given navigate to "http://automationexercise.com" website                        # stepDefinitions.order.OrderSteps.navigate_to_website(java.lang.String)
+Automation Exercise
+  When verify the home page is visible successfully                                # stepDefinitions.order.OrderSteps.verify_the_home_page_is_visible_successfully()
+  When add product to cart                                                         # stepDefinitions.order.OrderSteps.add_product_to_cart()
+  Then click view cart button                                                      # stepDefinitions.order.OrderSteps.click_view_cart_button()
+Automation Exercise - Checkout
+  And user verify the cart page is displayed                                       # stepDefinitions.order.OrderSteps.user_verify_the_cart_page_is_displayed()
+  And click proceed to checkout button                                             # stepDefinitions.order.OrderSteps.click_proceed_to_checkout_button()
+  When click register or login                                                     # stepDefinitions.order.OrderSteps.click_register_or_login()
+  Then signup and create account                                                   # stepDefinitions.order.OrderSteps.signup_and_create_account()
+Unable to conform the account creation.
+  And verify "Account Created!" then click continue                                # stepDefinitions.order.OrderSteps.verify_then_click_continue(java.lang.String)
+Logged in as siva
+  And the user should see the logged in as 'siva'                                  # stepDefinitions.order.OrderSteps.user_should_see_the_logged_in_as(java.lang.String)
+  And user click cart                                                              # stepDefinitions.order.OrderSteps.user_click_cart()
+  And proceed to checkout                                                          # stepDefinitions.order.OrderSteps.proceed_to_checkout()
+  When verify address details then review your order                               # stepDefinitions.order.OrderSteps.verify_address_details_then_review_your_order()
+  Then enter description and then click place order                                # stepDefinitions.order.OrderSteps.enter_description_and_then_click_place_order()
+  And enter debit card details                                                     # stepDefinitions.order.OrderSteps.enter_debit_card_details()
+  When click pay and confirm order to proceed                                      # stepDefinitions.order.OrderSteps.click_pay_and_confirm_order_to_proceed()
+      org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="form-control btn btn-primary submit-button" data-qa="pay-button" id="submit" type="submit">...</button> is not clickable at point (759, 565). Other element would receive the click: <iframe id="aswift_1" name="aswift_1" browsingtopics="true" style="width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1005" height="124" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20250319/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;adk=1812271801&amp;client=ca-pub-1677597403311019&amp;fa=1&amp;ifi=2&amp;uci=a!2&amp;btvi=1" data-google-container-id="a!2" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CIW7zoSOm4wDFUt0nQkdeMw1uA" data-load-complete="true"></iframe>
+        (Session info: chrome=134.0.6998.118)
+      Build info: version: '4.29.0', revision: '5fc1ec94cb'
+      System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Command: [c2ce3748521fc386092e97ee3caf3cfa, clickElement {id=f.FC30D81C93FFD776DF91091B923B2517.d.792A356DFCB4FEA7E1CF38F6CD940B38.e.555}]
+      Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\sivas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58487}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58487/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+      Element: [[ChromeDriver: chrome on windows (c2ce3748521fc386092e97ee3caf3cfa)] -> id: submit]
+      Session ID: c2ce3748521fc386092e97ee3caf3cfa
+      	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+      	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+      	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+      	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+      	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+      	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+      	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+      	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+      	at stepDefinitions.order.OrderSteps.click_pay_and_confirm_order_to_proceed(OrderSteps.java:205)
+      	at ✽.click pay and confirm order to proceed(file:///D:/wipro_selenium_training/Capstone_Project/Automated_Testing_of_Ecommerce_Website/src/test/resources/features/order/order.feature:21)
+  Then verify message "Congratulations! Your order has been confirmed!" is visible # stepDefinitions.order.OrderSteps.verify_message_is_visible(java.lang.String)
+  And delete account                                                               # stepDefinitions.order.OrderSteps.delete_account()
+  And verify the message "Account Deleted!" and click continue                     # stepDefinitions.order.OrderSteps.verify_the_message_and_click_continue(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Place Order: Register before Checkout&quot;, &quot;E-commerce Website Automation Testing&quot;](18)" classname="runner.TestRunner" time="5.993">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;partial link text&quot;,&quot;selector&quot;:&quot;Login&quot;}&#10;  (Session info: chrome=134.0.6998.118)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [c2ce3748521fc386092e97ee3caf3cfa, findElement {value=Login, using=partial link text}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\sivas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58487}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58487/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c2ce3748521fc386092e97ee3caf3cfa" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"partial link text","selector":"Login"}
+  (Session info: chrome=134.0.6998.118)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c2ce3748521fc386092e97ee3caf3cfa, findElement {value=Login, using=partial link text}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\sivas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58487}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58487/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c2ce3748521fc386092e97ee3caf3cfa
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at stepDefinitions.order.OrderSteps.click_signup_login(OrderSteps.java:237)
+	at ✽.click signup login(file:///D:/wipro_selenium_training/Capstone_Project/Automated_Testing_of_Ecommerce_Website/src/test/resources/features/order/order.feature:27)
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Place Order: Register before Checkout                                   # src/test/resources/features/order/order.feature:26
+  Given navigate to "http://automationexercise.com" website                       # stepDefinitions.order.OrderSteps.navigate_to_website(java.lang.String)
+Automation Exercise
+  When verify the home page is visible successfully                               # stepDefinitions.order.OrderSteps.verify_the_home_page_is_visible_successfully()
+  When click signup login                                                         # stepDefinitions.order.OrderSteps.click_signup_login()
+      org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"partial link text","selector":"Login"}
+        (Session info: chrome=134.0.6998.118)
+      For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+      Build info: version: '4.29.0', revision: '5fc1ec94cb'
+      System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Command: [c2ce3748521fc386092e97ee3caf3cfa, findElement {value=Login, using=partial link text}]
+      Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\sivas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58487}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58487/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+      Session ID: c2ce3748521fc386092e97ee3caf3cfa
+      	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+      	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+      	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+      	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+      	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+      	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+      	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+      	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+      	at stepDefinitions.order.OrderSteps.click_signup_login(OrderSteps.java:237)
+      	at ✽.click signup login(file:///D:/wipro_selenium_training/Capstone_Project/Automated_Testing_of_Ecommerce_Website/src/test/resources/features/order/order.feature:27)
+  Then user signup and create account                                             # stepDefinitions.order.OrderSteps.user_signup_and_create_account()
+  And verify "Account Created!" and click continue button                         # stepDefinitions.order.OrderSteps.verify_and_click_continue_button(java.lang.String)
+  And user should see the logged in username 'siva'                               # stepDefinitions.order.OrderSteps.user_should_see_the_logged_in_username(java.lang.String)
+  When add product to the cart                                                    # stepDefinitions.order.OrderSteps.add_product_to_the_cart()
+  Then click view cart link                                                       # stepDefinitions.order.OrderSteps.click_view_cart_link()
+  And verify the cart page is visible                                             # stepDefinitions.order.OrderSteps.verify_the_cart_page_is_visible()
+  And click the proceed to checkout                                               # stepDefinitions.order.OrderSteps.click_the_proceed_to_checkout()
+  When verify address details and review your order                               # stepDefinitions.order.OrderSteps.verify_address_details_and_review_your_order()
+  Then enter description then click place order                                   # stepDefinitions.order.OrderSteps.enter_description_then_click_place_order()
+  And enter the payment details                                                   # stepDefinitions.order.OrderSteps.enter_the_payment_details()
+  When click pay and confirm order button                                         # stepDefinitions.order.OrderSteps.click_pay_and_confirm_order_button()
+  Then verify order success msg "Congratulations! Your order has been confirmed!" # stepDefinitions.order.OrderSteps.verify_order_success_msg(java.lang.String)
+  And click delete account perminently                                            # stepDefinitions.order.OrderSteps.click_delete_account_perminently()
+  And verify the msg "Account Deleted!" then click continue                       # stepDefinitions.order.OrderSteps.verify_the_msg_then_click_continue(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Place Order: Login before Checkout&quot;, &quot;E-commerce Website Automation Testing&quot;](19)" classname="runner.TestRunner" time="4.009">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;partial link text&quot;,&quot;selector&quot;:&quot;Login&quot;}&#10;  (Session info: chrome=134.0.6998.118)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [c2ce3748521fc386092e97ee3caf3cfa, findElement {value=Login, using=partial link text}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\sivas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58487}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58487/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c2ce3748521fc386092e97ee3caf3cfa" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"partial link text","selector":"Login"}
+  (Session info: chrome=134.0.6998.118)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c2ce3748521fc386092e97ee3caf3cfa, findElement {value=Login, using=partial link text}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\sivas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58487}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58487/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c2ce3748521fc386092e97ee3caf3cfa
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at stepDefinitions.order.OrderSteps.user_click_signup_login(OrderSteps.java:366)
+	at ✽.user click signup login(file:///D:/wipro_selenium_training/Capstone_Project/Automated_Testing_of_Ecommerce_Website/src/test/resources/features/order/order.feature:44)
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Place Order: Login before Checkout                                              # src/test/resources/features/order/order.feature:43
+  Given navigate to "http://automationexercise.com" website                               # stepDefinitions.order.OrderSteps.navigate_to_website(java.lang.String)
+Automation Exercise
+  When verify the home page is visible successfully                                       # stepDefinitions.order.OrderSteps.verify_the_home_page_is_visible_successfully()
+  When user click signup login                                                            # stepDefinitions.order.OrderSteps.user_click_signup_login()
+      org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"partial link text","selector":"Login"}
+        (Session info: chrome=134.0.6998.118)
+      For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+      Build info: version: '4.29.0', revision: '5fc1ec94cb'
+      System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Command: [c2ce3748521fc386092e97ee3caf3cfa, findElement {value=Login, using=partial link text}]
+      Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\sivas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58487}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58487/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+      Session ID: c2ce3748521fc386092e97ee3caf3cfa
+      	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+      	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+      	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+      	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+      	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+      	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+      	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+      	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+      	at stepDefinitions.order.OrderSteps.user_click_signup_login(OrderSteps.java:366)
+      	at ✽.user click signup login(file:///D:/wipro_selenium_training/Capstone_Project/Automated_Testing_of_Ecommerce_Website/src/test/resources/features/order/order.feature:44)
+  Then Login                                                                              # stepDefinitions.order.OrderSteps.login()
+  And the user should see if logged in username 'siva' visible                            # stepDefinitions.order.OrderSteps.the_user_should_see_if_logged_in_username_visible(java.lang.String)
+  When user add product to cart                                                           # stepDefinitions.order.OrderSteps.user_add_product_to_cart()
+  Then click viewcart                                                                     # stepDefinitions.order.OrderSteps.click_viewcart()
+  And verify cart page is visible                                                         # stepDefinitions.order.OrderSteps.verify_cart_page_is_visible()
+  And user click proceed to checkout                                                      # stepDefinitions.order.OrderSteps.user_click_proceed_to_checkout()
+  When check address details then review order                                            # stepDefinitions.order.OrderSteps.check_address_details_then_review_order()
+  Then enter description to place order                                                   # stepDefinitions.order.OrderSteps.enter_description_to_place_order()
+  And enter card details                                                                  # stepDefinitions.order.OrderSteps.enter_card_details()
+  When user click pay and confirm order                                                   # stepDefinitions.order.OrderSteps.user_click_pay_and_confirm_order()
+  Then verify success message "Congratulations! Your order has been confirmed!" displayed # stepDefinitions.order.OrderSteps.verify_success_message_displayed(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Remove Products From Cart&quot;, &quot;E-commerce Website Automation Testing&quot;](20)" classname="runner.TestRunner" time="84.895">
+    <system-out><![CDATA[
+Scenario: Remove Products From Cart                         # src/test/resources/features/order/order.feature:57
+  Given navigate to "http://automationexercise.com" website # stepDefinitions.order.OrderSteps.navigate_to_website(java.lang.String)
+Automation Exercise
+  When verify the home page is visible successfully         # stepDefinitions.order.OrderSteps.verify_the_home_page_is_visible_successfully()
+  When add products to cart                                 # stepDefinitions.order.OrderSteps.add_products_to_cart()
+  Then click cart button                                    # stepDefinitions.order.OrderSteps.click_cart_button()
+Automation Exercise - Checkout
+  And verify the cart page                                  # stepDefinitions.order.OrderSteps.verify_cart_page()
+  And remove the product from cart                          # stepDefinitions.order.OrderSteps.remove_the_product_from_cart()
+  And verify if the product is reomved                      # stepDefinitions.order.OrderSteps.verify_if_the_product_is_reomved()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;View Category Products&quot;, &quot;E-commerce Website Automation Testing&quot;](21)" classname="runner.TestRunner" time="20.818">
+    <system-out><![CDATA[
+Scenario: View Category Products                                        # src/test/resources/features/order/order.feature:64
+  Given navigate to "http://automationexercise.com" website             # stepDefinitions.order.OrderSteps.navigate_to_website(java.lang.String)
+Automation Exercise
+  When verify the home page is visible successfully                     # stepDefinitions.order.OrderSteps.verify_the_home_page_is_visible_successfully()
+CATEGORY
+  When verify category in page                                          # stepDefinitions.order.OrderSteps.verify_category_in_page()
+  Then select women category                                            # stepDefinitions.order.OrderSteps.select_women_category()
+  And select a product                                                  # stepDefinitions.order.OrderSteps.select_a_product()
+  And verify the category page is displayed as "Women - Saree Products" # stepDefinitions.order.OrderSteps.verify_the_category_page_is_displayed_as(java.lang.String)
+  When select sub-category men                                          # stepDefinitions.order.OrderSteps.select_sub_category_men()
+MEN - JEANS PRODUCTS
+  Then verify the navigated page                                        # stepDefinitions.order.OrderSteps.verify_the_navigated_page()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;View &amp; Cart Brand Products&quot;, &quot;E-commerce Website Automation Testing&quot;](22)" classname="runner.TestRunner" time="15.1">
+    <system-out><![CDATA[
+Scenario: View & Cart Brand Products                              # src/test/resources/features/order/order.feature:72
+  Given navigate to "http://automationexercise.com" website       # stepDefinitions.order.OrderSteps.navigate_to_website(java.lang.String)
+Automation Exercise
+  When verify the home page is visible successfully               # stepDefinitions.order.OrderSteps.verify_the_home_page_is_visible_successfully()
+  When click products button                                      # stepDefinitions.order.OrderSteps.click_products_button()
+BRANDS
+  Then verify brands on left side                                 # stepDefinitions.order.OrderSteps.verify_brands_on_left_side()
+  And select on any brand name                                    # stepDefinitions.order.OrderSteps.select_on_any_brand_name()
+BRAND - POLO PRODUCTS
+  And verify navigated brand page and brand product are displayed # stepDefinitions.order.OrderSteps.verify_navigated_brand_page_and_brand_product_are_displayed()
+  When select any other brand name                                # stepDefinitions.order.OrderSteps.select_any_other_brand_name()
+BRAND - MADAME PRODUCTS
+  Then verify the brand page and product are visible              # stepDefinitions.order.OrderSteps.verify_the_brand_page_and_product_are_visible()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify address details in checkout page&quot;, &quot;E-commerce Website Automation Testing&quot;](23)" classname="runner.TestRunner" time="30.336">
+    <failure message="Expected condition failed: waiting for visibility of element located by By.id: id_gender1 (tried for 5 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\sivas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58518}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58518/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 099e1e4d675a2645f52b1f42003a0c42" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.id: id_gender1 (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\sivas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58518}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58518/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 099e1e4d675a2645f52b1f42003a0c42
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at stepDefinitions.purchase.purchaseSteps.fill_deatils_in_signup_and_create_account(purchaseSteps.java:73)
+	at ✽.fill deatils in signup and create account(file:///D:/wipro_selenium_training/Capstone_Project/Automated_Testing_of_Ecommerce_Website/src/test/resources/features/purchase/purchase.feature:9)
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Verify address details in checkout page            # src/test/resources/features/purchase/purchase.feature:7
+  Given navigate to page "http://automationexercise.com"     # stepDefinitions.purchase.purchaseSteps.navigate_to_page(java.lang.String)
+Automation Exercise
+  When verify that the home page is displayed                # stepDefinitions.purchase.purchaseSteps.verify_that_the_home_page_is_displayed()
+  When I click on Signup or Login button                     # stepDefinitions.purchase.purchaseSteps.i_click_on_signup_or_login_button()
+  Then fill deatils in signup and create account             # stepDefinitions.purchase.purchaseSteps.fill_deatils_in_signup_and_create_account()
+      org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: id_gender1 (tried for 5 second(s) with 500 milliseconds interval)
+      Build info: version: '4.29.0', revision: '5fc1ec94cb'
+      System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\sivas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58518}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58518/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+      Session ID: 099e1e4d675a2645f52b1f42003a0c42
+      	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+      	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+      	at stepDefinitions.purchase.purchaseSteps.fill_deatils_in_signup_and_create_account(purchaseSteps.java:73)
+      	at ✽.fill deatils in signup and create account(file:///D:/wipro_selenium_training/Capstone_Project/Automated_Testing_of_Ecommerce_Website/src/test/resources/features/purchase/purchase.feature:9)
+  And verify "Account Created!" and click continue           # stepDefinitions.purchase.purchaseSteps.verify_and_click_continue(java.lang.String)
+  And the user should see the message username 'siva'        # stepDefinitions.purchase.purchaseSteps.the_user_should_see_the_message_username(java.lang.String)
+  When add items to cart                                     # stepDefinitions.purchase.purchaseSteps.add_items_to_cart()
+  Then click cart button to proceed                          # stepDefinitions.purchase.purchaseSteps.click_cart_button_to_proceed()
+  And verify cart page is displayed                          # stepDefinitions.purchase.purchaseSteps.verify_cart_page_is_displayed()
+  And click on proceed to checkout                           # stepDefinitions.purchase.purchaseSteps.click_on_proceed_to_checkout()
+  And check billing address and shipping address are same    # stepDefinitions.purchase.purchaseSteps.check_billing_address_and_shipping_address_are_same()
+  And click delete account                                   # stepDefinitions.purchase.purchaseSteps.click_delete_account()
+  And verify "Delete Account!" msg and click continue button # stepDefinitions.purchase.purchaseSteps.verify_msg_click_continue_button(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Download Invoice after purchase order&quot;, &quot;E-commerce Website Automation Testing&quot;](24)" classname="runner.TestRunner" time="38.493">
+    <failure message="element click intercepted: Element &lt;button class=&quot;form-control btn btn-primary submit-button&quot; data-qa=&quot;pay-button&quot; id=&quot;submit&quot; type=&quot;submit&quot;&gt;...&lt;/button&gt; is not clickable at point (759, 565). Other element would receive the click: &lt;iframe id=&quot;aswift_1&quot; name=&quot;aswift_1&quot; browsingtopics=&quot;true&quot; style=&quot;width: 980px !important; height: 120px !important; display: block; margin: 0px auto;&quot; sandbox=&quot;allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot; width=&quot;980&quot; height=&quot;120&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; vspace=&quot;0&quot; hspace=&quot;0&quot; allowtransparency=&quot;true&quot; scrolling=&quot;no&quot; allow=&quot;attribution-reporting; run-ad-auction&quot; src=&quot;https://googleads.g.doubleclick.net/pagead/html/r20250319/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=2&amp;amp;uci=a!2&amp;amp;btvi=1&quot; data-google-container-id=&quot;a!2&quot; tabindex=&quot;0&quot; title=&quot;Advertisement&quot; aria-label=&quot;Advertisement&quot; data-google-query-id=&quot;COvg0uSOm4wDFcCaSwUdYWUOnA&quot; data-load-complete=&quot;true&quot;&gt;&lt;/iframe&gt;&#10;  (Session info: chrome=134.0.6998.118)&#10;Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [099e1e4d675a2645f52b1f42003a0c42, clickElement {id=f.191C77218CF5C49E3DC5652B6EAC7DB8.d.08464003596A0F4DCB28C3E363804D33.e.620}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\sivas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58518}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58518/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on windows (099e1e4d675a2645f52b1f42003a0c42)] -&gt; id: submit]&#10;Session ID: 099e1e4d675a2645f52b1f42003a0c42" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button class="form-control btn btn-primary submit-button" data-qa="pay-button" id="submit" type="submit">...</button> is not clickable at point (759, 565). Other element would receive the click: <iframe id="aswift_1" name="aswift_1" browsingtopics="true" style="width: 980px !important; height: 120px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="980" height="120" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20250319/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;adk=1812271801&amp;client=ca-pub-1677597403311019&amp;fa=1&amp;ifi=2&amp;uci=a!2&amp;btvi=1" data-google-container-id="a!2" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="COvg0uSOm4wDFcCaSwUdYWUOnA" data-load-complete="true"></iframe>
+  (Session info: chrome=134.0.6998.118)
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [099e1e4d675a2645f52b1f42003a0c42, clickElement {id=f.191C77218CF5C49E3DC5652B6EAC7DB8.d.08464003596A0F4DCB28C3E363804D33.e.620}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\sivas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58518}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58518/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (099e1e4d675a2645f52b1f42003a0c42)] -> id: submit]
+Session ID: 099e1e4d675a2645f52b1f42003a0c42
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at stepDefinitions.purchase.purchaseSteps.click_pay_and_confirm_order(purchaseSteps.java:273)
+	at ✽.click pay and confirm order(file:///D:/wipro_selenium_training/Capstone_Project/Automated_Testing_of_Ecommerce_Website/src/test/resources/features/purchase/purchase.feature:34)
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Download Invoice after purchase order                                 # src/test/resources/features/purchase/purchase.feature:20
+  Given navigate to page "http://automationexercise.com"                        # stepDefinitions.purchase.purchaseSteps.navigate_to_page(java.lang.String)
+Automation Exercise
+  When verify that the home page is displayed                                   # stepDefinitions.purchase.purchaseSteps.verify_that_the_home_page_is_displayed()
+  When user should add product to cart                                          # stepDefinitions.purchase.purchaseSteps.user_should_add_product_to_cart()
+  Then click view cart                                                          # stepDefinitions.purchase.purchaseSteps.click_view_cart()
+Automation Exercise - Checkout
+  And user should verify the cart page is displayed                             # stepDefinitions.purchase.purchaseSteps.user_should_verify_the_cart_page_is_displayed()
+  And click proceed to checkout                                                 # stepDefinitions.purchase.purchaseSteps.click_proceed_to_checkout()
+  When click register / login                                                   # stepDefinitions.purchase.purchaseSteps.click_register_login()
+  Then signup then create account                                               # stepDefinitions.purchase.purchaseSteps.signup_then_create_account()
+Unable to conform the account creation.
+  And verify "Account Created!" then click continue button                      # stepDefinitions.purchase.purchaseSteps.verify_then_click_continue_button(java.lang.String)
+Logged in as siva
+  And the user should see the logged in username 'siva'                         # stepDefinitions.purchase.purchaseSteps.the_user_should_see_the_logged_in_username(java.lang.String)
+  And click cart                                                                # stepDefinitions.purchase.purchaseSteps.click_cart()
+  And click button proceed to checkout                                          # stepDefinitions.purchase.purchaseSteps.click_button_proceed_to_checkout()
+  When verify address details and review order                                  # stepDefinitions.purchase.purchaseSteps.verify_address_details_and_review_order()
+  Then enter description and click place order                                  # stepDefinitions.purchase.purchaseSteps.enter_description_and_click_place_order()
+  And enter payment details                                                     # stepDefinitions.purchase.purchaseSteps.enter_payment_details()
+  When click pay and confirm order                                              # stepDefinitions.purchase.purchaseSteps.click_pay_and_confirm_order()
+      org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="form-control btn btn-primary submit-button" data-qa="pay-button" id="submit" type="submit">...</button> is not clickable at point (759, 565). Other element would receive the click: <iframe id="aswift_1" name="aswift_1" browsingtopics="true" style="width: 980px !important; height: 120px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="980" height="120" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20250319/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;adk=1812271801&amp;client=ca-pub-1677597403311019&amp;fa=1&amp;ifi=2&amp;uci=a!2&amp;btvi=1" data-google-container-id="a!2" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="COvg0uSOm4wDFcCaSwUdYWUOnA" data-load-complete="true"></iframe>
+        (Session info: chrome=134.0.6998.118)
+      Build info: version: '4.29.0', revision: '5fc1ec94cb'
+      System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Command: [099e1e4d675a2645f52b1f42003a0c42, clickElement {id=f.191C77218CF5C49E3DC5652B6EAC7DB8.d.08464003596A0F4DCB28C3E363804D33.e.620}]
+      Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\sivas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58518}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58518/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+      Element: [[ChromeDriver: chrome on windows (099e1e4d675a2645f52b1f42003a0c42)] -> id: submit]
+      Session ID: 099e1e4d675a2645f52b1f42003a0c42
+      	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+      	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+      	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+      	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+      	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+      	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+      	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+      	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+      	at stepDefinitions.purchase.purchaseSteps.click_pay_and_confirm_order(purchaseSteps.java:273)
+      	at ✽.click pay and confirm order(file:///D:/wipro_selenium_training/Capstone_Project/Automated_Testing_of_Ecommerce_Website/src/test/resources/features/purchase/purchase.feature:34)
+  Then verify success message "Congratulations! Your order has been confirmed!" # stepDefinitions.purchase.purchaseSteps.verify_success_message(java.lang.String)
+  And click download invoice and verify invoice is download successfully        # stepDefinitions.purchase.purchaseSteps.click_download_invoice_and_verify_invoice_is_download_successfully()
+  And click continue button                                                     # stepDefinitions.purchase.purchaseSteps.click_continue_button()
+  And delete the account                                                        # stepDefinitions.purchase.purchaseSteps.delete_the_account()
+  And verify the msg "Account Deleted!" and click continue                      # stepDefinitions.purchase.purchaseSteps.verify_the_msg_and_click_continue(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify Scroll Up using &apos;Arrow&apos; button and Scroll Down functionality&quot;, &quot;E-commerce Website Automation Testing&quot;](25)" classname="runner.TestRunner" time="7.991">
+    <system-out><![CDATA[
+Scenario: Verify Scroll Up using 'Arrow' button and Scroll Down functionality # src/test/resources/features/purchase/purchase.feature:41
+  Given navigate to page "http://automationexercise.com"                      # stepDefinitions.purchase.purchaseSteps.navigate_to_page(java.lang.String)
+Automation Exercise
+  When verify that the home page is displayed                                 # stepDefinitions.purchase.purchaseSteps.verify_that_the_home_page_is_displayed()
+  When page scroll down                                                       # stepDefinitions.purchase.purchaseSteps.page_scroll_down()
+  Then verify "Subscription" text visible                                     # stepDefinitions.purchase.purchaseSteps.verify_text_visible(java.lang.String)
+  And Click up arrow to move page upward                                      # stepDefinitions.purchase.purchaseSteps.click_up_arrow_to_move_page_upward()
+  And verify text "Full-Fledged practice website for Automation Engineers"    # stepDefinitions.purchase.purchaseSteps.verify_text(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify Scroll Up without &apos;Arrow&apos; button and Scroll Down functionality&quot;, &quot;E-commerce Website Automation Testing&quot;](26)" classname="runner.TestRunner" time="7.031">
+    <system-out><![CDATA[
+Scenario: Verify Scroll Up without 'Arrow' button and Scroll Down functionality       # src/test/resources/features/purchase/purchase.feature:47
+  Given navigate to page "http://automationexercise.com"                              # stepDefinitions.purchase.purchaseSteps.navigate_to_page(java.lang.String)
+Automation Exercise
+  When verify that the home page is displayed                                         # stepDefinitions.purchase.purchaseSteps.verify_that_the_home_page_is_displayed()
+  When scroll page down                                                               # stepDefinitions.purchase.purchaseSteps.scroll_page_down()
+  Then verify "Subscription" visible                                                  # stepDefinitions.purchase.purchaseSteps.verify_visible(java.lang.String)
+  And scroll page up                                                                  # stepDefinitions.purchase.purchaseSteps.scroll_page_up()
+  And verify text "Full-Fledged practice website for Automation Engineers" is visible # stepDefinitions.purchase.purchaseSteps.verify_text_is_visible(java.lang.String)
+]]></system-out>
+  </testcase>
+</testsuite>

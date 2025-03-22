@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="E-Commerce Test Suite">
+    
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    
+    <test name="E-Commerce Test Execution">
+        <classes>
+            <class name="stepDefinitions.login.LoginSteps"/>
+            <class name="stepDefinitions.functional.FunctionalSteps"/>
+            <class name="stepDefinitions.order.OrderSteps"/>
+            <class name="stepDefinitions.cart.CartSteps"/>
+            <class name="stepDefinitions.purchase.purchaseSteps"/>
+        </classes>
+    </test>
+</suite>
