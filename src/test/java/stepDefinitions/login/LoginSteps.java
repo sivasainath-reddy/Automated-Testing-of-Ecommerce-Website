@@ -84,9 +84,9 @@ public class LoginSteps {
 	}
 	@Then("I fill in the account details")
 	public void i_fill_in_the_account_details() {
-//		WebElement genderRadio = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("id_gender1")));
-//	    genderRadio.click();
-		driver.findElement(By.id("id_gender1")).click();
+		WebElement genderRadio = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("id_gender1")));
+	    genderRadio.click();
+//		driver.findElement(By.id("id_gender1")).click();
 	    driver.findElement(By.id("password")).sendKeys(OrderSteps.getData("sheet1",1,2));
 
 	    new Select(driver.findElement(By.id("days"))).selectByIndex(5);
